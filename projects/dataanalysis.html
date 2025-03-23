@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+<h2>Project on Sales Prediction</h2>
 
 <html lang="en">
-<head><meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Project 1 Data Analysis</title>
 <title>dataanalysis</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -54,6 +58,98 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
 .highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */
   </style>
+<style>
+  /* Default Light Mode */
+  :root {
+      --background-color: #ffffff;
+      --text-color: #000000;
+  }
+
+  /* Dark Mode */
+  .dark-mode {
+      --background-color: #000000;
+      --text-color: #ffffff;
+  }
+  body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dark-mode-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            background: #333;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .dark-mode .dark-mode-toggle {
+            background: #fff;
+            color: #000;
+        }
+    </style>
+<body>
+
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+</body>
+<style>
+  /* Default Light Mode */
+  :root {
+      --background-color: #ffffff;
+      --text-color: #000000;
+      --button-bg: #333;
+      --button-text: #fff;
+  }
+
+  /* Dark Mode */
+  .dark-mode {
+      --background-color: #1e1e1e;
+      --text-color: #ffffff;
+      --button-bg: #fff;
+      --button-text: #000;
+  }
+
+  body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      transition: background 0.3s, color 0.3s;
+  }
+
+  .dark-mode-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      background: var(--button-bg);
+      color: var(--button-text);
+      border-radius: 5px;
+      font-size: 14px;
+  }
+</style>
+
+<script>
+  // Apply dark mode before rendering to prevent flash of white
+  if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark-mode");
+  }
+
+  function toggleDarkMode() {
+      document.documentElement.classList.toggle("dark-mode");
+      const mode = document.documentElement.classList.contains("dark-mode") ? "dark" : "light";
+      localStorage.setItem("theme", mode);
+  }
+</script>
 <style type="text/css">
 /*-----------------------------------------------------------------------------
 | Copyright (c) Jupyter Development Team.

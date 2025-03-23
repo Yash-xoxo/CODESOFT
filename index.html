@@ -4,16 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeSoft Project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+    
     <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #000000;
+            color: white;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .dark-button {
+            background-color: black;
+            color: white;
+        }
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 50px;
             background-color: #f4f4f4;
         }
-        h1 {
-            color: #333;
-        }
+       
         .button-container {
             margin-top: 20px;
         }
@@ -35,10 +56,35 @@
     </style>
 </head>
 <body>
+
+    <button id="darkModeToggle" class="dark-button">Dark Mode</button>
+
+    <script>
+        const toggleButton = document.getElementById("darkModeToggle");
+
+        toggleButton.addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+
+            // Save preference in local storage
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        });
+
+        // Load saved theme
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+
+</body>
+<body>
     <h1>Welcome to my CodeSoft Project </h1>
     <h2>By - Yash Gutpa</h2>
     <div class="button-container">
-        <a href="dataanalysis.html" class="button">Project 1</a>
+        <a href="/projects/dataanalysis.html" class="button">Project 1</a>
         <a href="prj2.html" class="button">Project 2</a>
         <a href="prj3.html" class="button">Project 3</a>
     </div>
