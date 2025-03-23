@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head><meta charset="utf-8"/>
+<div class="box"> 
+  <h1>First Project - Sale Prediction</h1>
+</div> <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>dataanalysis</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Project Sale Prediction</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -61,7 +63,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
   /* Dark Mode */
   .dark-mode {
-      --background-color: #1e1e1e;
+      --background-color: #000000;
       --text-color: #ffffff;
   }
 
@@ -71,7 +73,14 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
       font-family: Arial, sans-serif;
       transition: background 0.3s, color 0.3s;
   }
-
+  .box {
+  border: 3px solid black; /* Adds a black border */
+  padding: 15px; /* Adds space within the box */
+  background-color: lightgray; /* Sets background color */
+  width: 400px; /* Sets width of the box */
+  margin: 20px ; /* Centers the box horizontally */
+  align-self: center;
+  }
   .dark-mode-toggle {
       position: fixed;
       top: 10px;
@@ -79,7 +88,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
       padding: 10px 15px;
       border: none;
       cursor: pointer;
-      background: #333;
+      background: #000000;
       color: #fff;
       border-radius: 5px;
       font-size: 14px;
