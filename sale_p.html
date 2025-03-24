@@ -99,7 +99,31 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
       color: #000;
   }
 </style>
+<head>
+  <style>
+      .container {
+          display: flex;
+          justify-content: flex-end; /* Moves button to the right */
+          padding: 20px;
+      }
+      button {
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+      }
+  </style>
+</head>
 <body>
+
+<div class="container">
+  <button onclick="openFile()">Download Datasheet</button>
+</div>
+
+<script>
+function openFile() {
+  window.open('sp.csv', '_blank'); // Change 'yourfile.pdf' to your actual file
+}
+</script><body>
 
   <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
 
