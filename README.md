@@ -1,6 +1,6 @@
 its a simple codesoft project website to view the progress stats
 ***
-![INDEX](image/inndex.png)
+![INDEX](image/index.png)
 ***
 ![Alt text](image/1.png)
 
