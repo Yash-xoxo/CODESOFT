@@ -17,21 +17,21 @@ Project 1 - Sale Prediction
 ***
 Project 2 - Movie Rating Prediction
 ***
-![Alt text](image/p2_2.png)
+![Alt text](image/p2_1.png)
 ***
 ![Alt text](image/p2_2.png)
 ***
-![Alt text](image/p2_2.png)
+![Alt text](image/p2_3.png)
 ***
-![Alt text](image/p2_2.png)
+![Alt text](image/p2_4.png)
 ***
 ***
 Project 3 - Iris Flower Detection
 ***
-![Alt text](image/p3_2.png)
+![Alt text](image/p3_1.png)
 ***
 ![Alt text](image/p3_2.png)
 ***
-![Alt text](image/p3_2.png)
+![Alt text](image/p3_3.png)
 ***
-![Alt text](image/p3_2.png)
+![Alt text](image/p3_4.png)
